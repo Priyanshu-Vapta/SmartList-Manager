@@ -2,7 +2,7 @@
 
 **SmartList Manager** is an intuitive list organization tool built with React. It allows users to fetch, view, and dynamically manage categorized list items through a visually interactive interface.
 
-🔗 **Live Demo**: [Visit SmartList Manager](https://velvety-pixie-68b56b.netlify.app/)
+🔗 **Live Demo**: [Visit SmartList Manager](https://priyanshu-vapta.github.io/SmartList-Manager/)
 
 ---
 
