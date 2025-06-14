@@ -1,42 +1,55 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #0d6efd;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  box-shadow: 0 0 10px #0d6efd44;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
+@keyframes spin {
+  0% {
     transform: rotate(0deg);
+    box-shadow: 0 0 10px #0d6efd44;
   }
-  to {
+  100% {
     transform: rotate(360deg);
+    box-shadow: 0 0 20px #0d6efd88;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.error-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
 }
 
-.card {
-  padding: 2em;
+.error-image {
+  margin-bottom: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.retry-button {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.retry-button:hover {
+  background-color: #155cbd;
+}
+
+.scrollable-list {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+.list-bg {
+  background-color: #eff6ff;
 }
